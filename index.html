@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
@@ -42,7 +43,7 @@
       background-repeat: no-repeat;
       filter: brightness(0.35) contrast(1.1);
     }
-    
+
     /* Custom gradient overlay - urban/hip-hop aesthetic */
     .hero-overlay {
       position: absolute;
@@ -50,7 +51,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(135deg, rgba(0,0,0,0.9) 0%, rgba(40,20,15,0.7) 50%, rgba(0,0,0,0.85) 100%);
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.9) 0%, rgba(40, 20, 15, 0.7) 50%, rgba(0, 0, 0, 0.85) 100%);
       z-index: 1;
     }
 
@@ -61,7 +62,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: repeating-linear-gradient(45deg, rgba(255,215,0,0.02) 0px, rgba(255,215,0,0.02) 2px, transparent 2px, transparent 8px);
+      background-image: repeating-linear-gradient(45deg, rgba(255, 215, 0, 0.02) 0px, rgba(255, 215, 0, 0.02) 2px, transparent 2px, transparent 8px);
       pointer-events: none;
       z-index: 2;
     }
@@ -74,8 +75,8 @@
       width: 500px;
       height: 500px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,215,0,0.08) 0%, rgba(0,0,0,0) 70%);
-      border: 2px solid rgba(255,200,50,0.2);
+      background: radial-gradient(circle, rgba(255, 215, 0, 0.08) 0%, rgba(0, 0, 0, 0) 70%);
+      border: 2px solid rgba(255, 200, 50, 0.2);
       z-index: 1;
       pointer-events: none;
     }
@@ -122,7 +123,7 @@
       font-weight: 800;
       line-height: 1.1;
       color: #FFFFFF;
-      text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
       max-width: 900px;
       margin-bottom: 1rem;
       letter-spacing: -0.02em;
@@ -252,7 +253,7 @@
 
     .stat-icon {
       font-size: 1.6rem;
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
     }
 
     .stat-number {
@@ -292,8 +293,13 @@
     }
 
     @keyframes spinSlow {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
     .scroll-text {
@@ -311,20 +317,25 @@
         text-align: center;
         padding: 2rem 1rem;
       }
+
       .hero-tagline {
         border-left: none;
         padding-left: 0;
         text-align: center;
       }
+
       .hero-buttons {
         justify-content: center;
       }
+
       .music-stats {
         justify-content: center;
       }
+
       .hero-title .og-tag {
         font-size: 0.4em;
       }
+
       .vinyl-ring {
         width: 300px;
         height: 300px;
@@ -335,8 +346,15 @@
 
     /* add fade up animation for container */
     @keyframes fadeUp {
-      0% { opacity: 0; transform: translateY(35px);}
-      100% { opacity: 1; transform: translateY(0);}
+      0% {
+        opacity: 0;
+        transform: translateY(35px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .hero-container {
@@ -417,16 +435,171 @@
     .social-follow {
       margin-top: 2rem;
       font-size: 0.85rem;
-      color: #aaa;
+      color: #F0E6D0;
     }
 
     .social-follow strong {
       color: #FFD966;
     }
 
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      height: 4vh;
+      float: right;
+    
+
+    }
+
+    .navbar a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+    }
+
+    .navbar a:visited {
+      color: rgb(81, 79, 224);
+    }
+
+    #About {
+      background-color: #F0E6D0;
+      padding: 20px;
+
+    }
+
+    #About div {
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    #About h2,
+    #About p {
+      text-align: center;
+    }
+
+    #About ul {
+      padding: 20px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      text-align: center;
+    }
+
+    #Biography {
+      background-color: #F0E6D0;
+      padding: 20px;
+    }
+
+
+    #Biography div {
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    #Biography h2,
+    #Biography p {
+      text-align: center;
+    }
+
+    #Biography ul {
+      padding: 20px;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      text-align: center;
+    }
+
+
+    #Discography {
+      background-color: #F0E6D0;
+      padding: 20px;
+    }
+
+    .Albums ul {
+      padding: 20px;
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      list-style-type: none;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .Albums article {
+      background-color: rgb(236, 219, 123);
+      padding: 20px;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      width: 200px;
+    }
+
+    .Albums article h3,
+    .Albums article p {
+      font-size: 1.2rem;
+      color: #333;
+      text-align: center;
+    }
+
+    .Albums a:any-link {
+      text-decoration: none;
+    }
+
+    .Albums img {
+      width: 80px;
+      order: -1;
+    }
+
+    #Discography h2 {
+      text-align: center;
+    }
+
+    .Songs {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+
+
     /* All links are actual hrefs - no JavaScript needed */
   </style>
 </head>
+<header>
+  <div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#Biography">Biography</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Discography">Discograpy</a></li>
+        <li><a href="#Gallery and Events">Gallery and Events</a></li>
+        <li><a href="#Contact us">Contact us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+</header>
+
 <body>
 
   <!-- KHALIGRAPH JONES - OFFICIAL HERO BANNER SECTION (NO JAVASCRIPT) -->
@@ -457,20 +630,22 @@
 
       <!-- bio snippet -->
       <p class="hero-description">
-        Multi-award winning rapper, lyricist, and cultural force. With chart-topping albums, 
-        sold-out arenas, and undeniable bars — Khaligraph Jones redefines African hip-hop. 
+        Multi-award winning rapper, lyricist, and cultural force. With chart-topping albums,
+        sold-out arenas, and undeniable bars — Khaligraph Jones redefines African hip-hop.
         Stream the new wave, witness the legacy.
       </p>
 
       <!-- primary CTA: music streaming & merch (actual links - no JS) -->
       <div class="hero-buttons">
-        <a href="https://open.spotify.com/artist/1XXg6UEmlla5IVcOpeaZBr" class="btn-primary" target="_blank" rel="noopener noreferrer">
+        <a href="https://open.spotify.com/artist/1XXg6UEmlla5IVcOpeaZBr" class="btn-primary" target="_blank"
+          rel="noopener noreferrer">
           🎧 STREAM NOW
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 18L15 12L9 6V18Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M9 18L15 12L9 6V18Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" />
           </svg>
         </a>
-        <a href="https://www.youtube.com/@KhaligraphJones" class="btn-secondary" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/@KhaligraphJones" class="btn-secondary" target="_blank"
+          rel="noopener noreferrer">
           ▶ WATCH VIDEOS
         </a>
         <a href="#" class="btn-secondary" style="border-color:#FFB347;">
@@ -511,30 +686,37 @@
     <div class="streaming-container">
       <h2 class="streaming-title">🎤 Latest Release</h2>
       <p class="streaming-text">"YES BANA" — The anthem taking over airwaves. Stream on all platforms.</p>
-      
+
       <div class="platform-links">
-        <a href="https://open.spotify.com/artist/1XXg6UEmlla5IVcOpeaZBr" class="platform-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://open.spotify.com/artist/1XXg6UEmlla5IVcOpeaZBr" class="platform-link" target="_blank"
+          rel="noopener noreferrer">
           🎧 Spotify
         </a>
-        <a href="https://music.apple.com/ke/artist/khaligraph-jones/613728974" class="platform-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://music.apple.com/ke/artist/khaligraph-jones/613728974" class="platform-link" target="_blank"
+          rel="noopener noreferrer">
           🍎 Apple Music
         </a>
-        <a href="https://www.boomplay.com/artists/281487" class="platform-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.boomplay.com/artists/281487" class="platform-link" target="_blank"
+          rel="noopener noreferrer">
           🎵 Boomplay
         </a>
-        <a href="https://www.youtube.com/@KhaligraphJones" class="platform-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/@KhaligraphJones" class="platform-link" target="_blank"
+          rel="noopener noreferrer">
           ▶ YouTube Music
         </a>
-        <a href="https://www.deezer.com/en/artist/7495241" class="platform-link" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.deezer.com/en/artist/7495241" class="platform-link" target="_blank"
+          rel="noopener noreferrer">
           🎶 Deezer
         </a>
       </div>
-      
+
       <div class="social-follow">
         <strong>🇰🇪 Follow Khaligraph Jones:</strong> @khaligraph_jones • #TeamOG • Nairobi to the World
       </div>
     </div>
   </section>
+
+
 
   <!-- 
     ============================================================
@@ -546,5 +728,168 @@
     - Ready to use - no JS errors, no console warnings
     ============================================================
   -->
+
+
+  <!-- Abut and Biography  -->
+  <section id="Biography">
+
+    <div>
+ <h2>Biography</h2>
+    <p>
+      Khaligraph Jones is a Kenyan rapper known for his powerful lyrics,
+      deep voice, and influence in African hip-hop. He has won multiple
+      awards and is recognized as one of the top rappers in Africa.
+    </p>
+    </div>
+   
+    <ul>
+      <li>Real Name: Brian Ouko Omollo</li>
+      <li>Genre: Hip-Hop / Rap</li>
+      <li>Country: Kenya</li>
+      <li>Awards: BET Hip Hop Award Winner</li>
+    </ul>
+  </section>
+
+  <!-- About Section -->
+  <section id="About">
+
+    <div>
+      <h2>About the Artist</h2>
+      <p>
+        Khaligraph Jones is known for his authenticity, storytelling,
+        and dedication to uplifting African rap on the global stage.
+      </p>
+    </div>
+
+    <ul>
+      <li>Famous Songs: Mazishi, Yego, Leave Me Alone</li>
+      <li>Nickname: OG</li>
+      <li>Years Active: 2008 — Present</li>
+      <li>Social: @khaligraph_jones</li>
+    </ul>
+    <!--Kasongoooo-->
+    <!--updated biography sectiongit-->
+
+
+  </section>
+
+
+  <!-- Discography and Songs Section -->
+  <div id="Discography">
+    <section class="Albums">
+      <h2> ALBUMS </h2>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/watch?v=DCAJxCI9R5c&list=PLUymp-xKmuBUMLiigxLWq3-GggPT4ziRX" target="_blank">
+            <article>
+              <h3> Testimony 1990 </h3>
+              <img src="https://files.svgcdn.io/famicons/albums-outline.svg" alt="album" width="80" />
+
+              <p>
+                Released: 2018 <br> 10 Tracks
+              </p>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.youtube.com/playlist?list=OLAK5uy_l5f3RdOSBrkYcAZc-kSX5cnsTXGXWuvkE" target="_blank">
+            <article>
+              <h3> Invinsible Currency </h3>
+              <img src="https://files.svgcdn.io/famicons/albums-outline.svg" alt="album" width="80" />
+              <p>
+                Released: 2022 <br> 17 Tracks
+              </p>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.youtube.com/watch?v=fJAVnwq2xIo&list=PL5yFZMqIXMMbK9kwzzxC9-9uEAOXOGvMT" target="_blank">
+            <article>
+              <h3> The Book Of Jones </h3>
+              <img src="https://files.svgcdn.io/famicons/albums-outline.svg" alt="album" width="80" />
+
+              <p>
+                Released: 2025 <br> 10 Tracks
+              </p>
+            </article>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.youtube.com/watch?v=rrG1GAaq79Q&list=PLeFeIQbZaL1cTWp_v-RJLET7jy9zbHkly" target="_blank">
+            <article>
+              <h3> Wrong Number </h3>
+              <img src="https://files.svgcdn.io/famicons/albums-outline.svg" alt="Icon" width="80" />
+              <p>
+                Released: 2024 <br> 129 Tracks
+              </p>
+            </article>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <section class="Songs">
+      <h2> POPULAR SONGS </h2>
+
+
+      <article>
+        <h3> Mazishi </h3>
+        <iframe src="https://audiomack.com//embed/khaligraphjones/song/mazishi-1" scrolling="no" width="100%"
+          height="252" frameborder="0" title="Mazishi by Khaligraph Jones"></iframe>
+      </article>
+
+
+
+      <article>
+        <h3> Tuma Kitu </h3>
+        <iframe src="https://audiomack.com//embed/khaligraphjones/song/tuma-kitu" scrolling="no" width="100%"
+          height="252" frameborder="0" title="Tuma Kitu by Khaligraph Jones"></iframe>
+      </article>
+
+
+
+      <article>
+        <h3> Yes Bana </h3>
+        <iframe src="https://audiomack.com//embed/khaligraphjones/song/yesbana" scrolling="no" width="100%" height="252"
+          frameborder="0" title="Yes Bana by Khaligraph Jones"></iframe>
+      </article>
+
+
+
+      <article>
+        <h3> Leave Me Alone </h3>
+        <iframe src="https://audiomack.com//embed/khaligraphjones/song/leave-me-alone" scrolling="no" width="100%"
+          height="252" frameborder="0" title="Leave Me Alone by Khaligraph Jones"></iframe>
+      </article>
+
+
+
+      <a href="https://audiomack.com/khaligraphjones/songs" target="_blank">
+        Explore More
+      </a>
+    </section>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
